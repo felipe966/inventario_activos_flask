@@ -240,7 +240,7 @@ def updateMovement(id):
             return redirect("/movements/")
 
         except:
-            return "There was an issue while updating the Product Movement"
+            return "Hubo un error al actualizar el movimiento"
     else:
         return render_template("update-movement.html", movement=movement, locations=locations, products=products)
 
